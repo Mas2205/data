@@ -1,0 +1,11 @@
+version: "3.10"
+services:
+    jupyter:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/home/jovyan/work/
+        ports: 
+            - "8888:8888"
+        
